@@ -8,9 +8,9 @@
 #]
 
 from django.urls import path
-from catalog.views import home_view, contact_view
+from .views import home_view, contacts_view
 
 urlpatterns = [
-    path('', home_view),
-    path('', contact_view),
+    path('', home_view, name='home'),
+    path('catalog/', contacts_view, name='contacts'),
 ]
