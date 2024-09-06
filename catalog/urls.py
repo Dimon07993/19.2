@@ -12,5 +12,5 @@ from .views import home_view, contacts_view
 
 urlpatterns = [
     path('', home_view, name='home'),
-    path('catalog/', contacts_view, name='contacts'),
+    path('contacts/', contacts_view, name='contacts'),
 ]
